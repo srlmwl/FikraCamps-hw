@@ -94,13 +94,13 @@ console.log(toArray({ a: 1, b: 2 }))
 
 function keysAndValues(dict){
   let dict2 = Object.keys(dict).sort(); 
-  arrءKey=[];
+  arrKey=[];
   arrValue=[];
   for (let key in dict2){
-    arrءKey.push(dict2[key]);
+    arrKey.push(dict2[key]);
     arrValue.push(dict[dict2[key]]);
   }
-return [arrءKey,arrValue]
+return [arrKey,arrValue]
 }
 console.log(keysAndValues({ a: "Apple", c: "Google" ,b: "Microsoft"}))
 
